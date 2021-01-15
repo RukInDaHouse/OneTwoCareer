@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Grid</title>
+	<title>OneTwoCareer - Home</title>
 	<link rel="stylesheet" href="./style.css">
 </head>
 
@@ -68,7 +68,8 @@
 <div class="row">
 	<div class="col col-span-12 col-span-12-onelinetext">
 		<div class="big-number"> 4,500 </div>
-	<p>Актуальных профессий для тебя</p></div>
+		<p>Актуальных профессий для тебя</p>
+	</div>
 </div>
 
 <div class="row">
@@ -136,7 +137,17 @@
 							<h3>43 года</h3>
 							<p>Для меня главное - результат. OneTwoCareer мне его предоставили. Ребенок доволен и изучает информацию о будущей профессии. Мне тоже было интересно, хоть я уже давно определился с профессией.</p>
 						</div>
-						
+						<div class="clients-rewiews">
+							<h2>Артем</h2>
+							<h3>43 года</h3>
+							<p>Для меня главное - результат. OneTwoCareer мне его предоставили. Ребенок доволен и изучает информацию о будущей профессии. Мне тоже было интересно, хоть я уже давно определился с профессией.</p>
+						</div>
+						<div class="clients-rewiews">
+							<h2>Артем</h2>
+							<h3>43 года</h3>
+							<p>Для меня главное - результат. OneTwoCareer мне его предоставили. Ребенок доволен и изучает информацию о будущей профессии. Мне тоже было интересно, хоть я уже давно определился с профессией.</p>
+						</div>
+
         </div>
     </li>
   </ul>
@@ -170,29 +181,6 @@
 		</div>
 	</div>
 </footer>
-	<script>
-		const accordion = document.querySelector('.accordion');
-const items     = accordion.querySelectorAll('li');
-const questions = accordion.querySelectorAll('.other-review');
-
-//Lets figure out what item to click
-function toggleAccordion() {
-  const thisItem = this.parentNode;
-  
-    items.forEach(item => {
-      if (thisItem == item) {
-        thisItem.classList.toggle('open');
-        return;
-    }
-  
-    item.classList.remove('open');
-  });
-}
-
-
-
-questions.forEach(question => question.addEventListener('click', toggleAccordion));
-
-	</script>
+<script src="./js/script.js"></script>
 </body>
 </html>
