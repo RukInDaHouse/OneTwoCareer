@@ -16,3 +16,5 @@ function toggleAccordion() {
 }
 
 questions.forEach(question => question.addEventListener('click', toggleAccordion));
+
+
