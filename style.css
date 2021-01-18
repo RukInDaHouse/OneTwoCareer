@@ -312,24 +312,6 @@ a {
 	background-color: rgba(255,0,0,0.1) !important;
 }
 
-@media screen and (max-width: 768px) {
-	.col-span-1,
-	.col-span-2,
-	.col-span-3,
-	.col-span-4,
-	.col-span-5 {
-		flex-basis: 50%;
-	}
-
-	.nested .col {
-		flex-basis: 100%;
-	}
-
-	.raw {
-		padding: 0;
-	}
-}
-
 .footer {
 	background-color: #171717;
 	position: absolute;
@@ -381,70 +363,12 @@ a {
 	}
 }
 
-@media screen and (max-width: 999px) {
-	.footer {
-		padding: 5rem 0;
-		background: #171717;
-		position: fixed;
-		vertical-align: middle;
-		z-index: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		height: 500px;
-	}
-
-	.col-span-12-onelinetext {
-		display: flex;
-	}
-
-	.balloon_main, 
-	.balloon_science, 
-	.balloon_manage {
-		display: none;
-	}
-
-	.col-span-6,
-	.col-span-7,
-	.col-span-8,
-	.col-span-9,
-	.col-span-10,
-	.col-span-11 {
-		flex-basis: 100%;
-	}
-
-	.col-span-12-arrow {
-		font-size: 70px;
-	}
-
-	.col-span-12-arrow img{
-		display: none; 
-	}
-
-	.clients-rewiews h2 {
-		font-size: 50px;
-	}
-
-	.clients-rewiews h3 {
-		font-size: 30px;
-	}
-	.clients-rewiews p {
-		font-size: 30px;
-		line-height: 1.5;
-	}
-
-	.other-review-text .clients-rewiews p {
-		font-size: 50px;
-		line-height: 1.5;
-	}
-}
-
 .section {
 	position: relative;
 	background: #FFF;
 	z-index: 5;
 	margin-bottom: 30vh;
-	box-shadow: 0 0 12px rgba(0,0,0,.25);
+	right: 0;
 }
 
 .header-fixed {
@@ -814,12 +738,7 @@ body.fixed .header-fixed .header-limiter nav {
 	o-transform: translate(-55%, -10px);
 }
 
-.col-span-2-about-game {
-	padding: 40px;
-}
-
 .col-span-2-about-game p{
-	font-size: 20px;
 	letter-spacing: normal;
 	word-spacing: 0px;
 	font-weight: 500;
@@ -836,6 +755,7 @@ body.fixed .header-fixed .header-limiter nav {
    display: flex;
    align-items: center;
    justify-content: center;
+   padding: 40px;
 }
 
 .col-span-6-video-text h1{
@@ -909,6 +829,8 @@ body.fixed .header-fixed .header-limiter nav {
 
 .col-span-2-for-who {
 	padding: 40px;
+	display: flex;
+	justify-content: center;
 }
 
 .col-span-2-for-who p{
@@ -922,6 +844,9 @@ body.fixed .header-fixed .header-limiter nav {
 
 .col-span-2-for-who img{
 	width: 150px;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin: 0; 
 }
 
@@ -957,4 +882,145 @@ body.fixed .header-fixed .header-limiter nav {
 	font-size: 70px;
 	font-weight: 600;
 	line-height: 91px;
+}
+
+.col-span-12-bottom-main-text h2{
+	color: #000;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 43.5px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.col-span-12-bottom-main-text h3 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.col-span-12-bottom-main-text h4 {
+	color: #D11100;
+	font-size: 31px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.col-span-12-bottom-main-text h5 {
+	color: #D11100;
+	font-size: 31px;
+	text-align: center;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 999px) {
+	.footer {
+		padding: 5rem 0;
+		background: #171717;
+		position: fixed;
+		vertical-align: middle;
+		z-index: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 500px;
+	}
+
+	.col-span-12-onelinetext {
+		display: flex;
+	}
+
+	.col-span-2-about-game p{
+		font-size: 35px;
+		line-height: 1.5;
+	}
+
+	.about-image {
+		width: 250px;
+	}
+
+	.col-span-2-about-game {
+   		padding: 40px;
+	}
+
+	.col-span-6-video-text p {
+		font-size: 35px;
+		line-height: 1.5;
+	}
+
+	.balloon_main, 
+	.balloon_science, 
+	.balloon_manage {
+		display: none;
+	}
+
+	.col-span-12-onelinetext {
+		font-size: 70px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.footer p {
+		font-size: 30px;
+		padding: 30px;
+		line-height: 1.5;
+	}
+
+	.footer-menu ul li {
+		font-size: 25px;
+
+	}
+
+	.footer-menu-resolve {
+		font-size: 25px;
+	}
+	.col-span-1,
+	.col-span-2,
+	.col-span-3,
+	.col-span-4,
+	.col-span-5 {
+		flex-basis: 100%;
+	}
+
+	.nested .col {
+		flex-basis: 100%;
+	}
+
+	.raw {
+		padding: 0;
+	}
+	.col-span-6,
+	.col-span-7,
+	.col-span-8,
+	.col-span-9,
+	.col-span-10,
+	.col-span-11 {
+		flex-basis: 80%;
+	}
+
+	.col-span-12-arrow {
+		font-size: 70px;
+	}
+
+	.active-plane {
+		display: none; 
+	}
+
+	.clients-rewiews h2 {
+		font-size: 50px;
+	}
+
+	.clients-rewiews h3 {
+		font-size: 30px;
+	}
+	.clients-rewiews p {
+		font-size: 30px;
+		line-height: 1.5;
+	}
+
+	.other-review-text .clients-rewiews p {
+		font-size: 50px;
+		line-height: 1.5;
+	}
 }
