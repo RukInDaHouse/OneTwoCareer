@@ -21,7 +21,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #ff8818;    
+  background: #FF8818;    
   border-radius: 20px;       
   border: 3px solid orange;  
 }
@@ -140,8 +140,7 @@ a {
 
 .big-number {
 	font-size: 75px;
-	color: #ff8818;
-	float: right;
+	color: #FF8818;
 }
 
 .accordion-clients-rewiews .clients-rewiews {
@@ -207,9 +206,37 @@ a {
 	text-align: center;
 	font-weight: 700;
 	word-spacing: 0px;
-	padding: 40px;
 	display: inline-block;
-	justify-content: center;
+}
+
+.col-span-12-main-text h1{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	word-spacing: 0px;
+	display: inline-block;
+	margin: 0;
+	padding: 50px; 
+}
+
+.col-span-12-main-text h2{
+	font-size: 50px;
+	text-align: center;
+	font-weight: 700;
+	word-spacing: 0px;
+	display: inline-block;
+	margin: 0;
+	padding: 0; 
+}
+
+.col-span-12-main-text h3{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	word-spacing: 0px;
+	display: inline-block;
+	margin: 0;
+	padding: 0; 
 }
 
 .row .row, .row.nested {
@@ -721,7 +748,213 @@ body.fixed .header-fixed .header-limiter nav {
 	-webkit-transform: translate(-50%, 0%);
 	-moz-transform: translate(-50%, 0%);
 	o-transform: translate(-50%, 0%);
-	transform: translate(-50%, 0%);
     opacity: 1;
     }
+}
+
+.col-span-12 h1 {
+	text-align: center;
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 54.6px;
+}
+
+
+.buy-button {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 600;
+    border-width: 1px;
+    border-radius: 0px;
+    background: #FF8818;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.buy-button-border {
+	color: transparent;
+    font-size: 20px;
+    font-family: 'HelveticaNeue',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    border-width: 2px;
+    border-radius: 0px;
+    background-position: center center;
+    border-color: #000000;
+    border-style: solid;
+    width: 247px;
+    height: 47px;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+	z-index: -9;
+}
+
+.buy-button:hover {
+    background-color: #f76707;
+    color: #fffcf7;
+	transform: translate(-55%, -10px);
+	-webkit-transform: translate(-55%, -10px);
+	-moz-transform: translate(-55%, -10px);
+	o-transform: translate(-55%, -10px);
+}
+
+.col-span-2-about-game {
+	padding: 40px;
+}
+
+.col-span-2-about-game p{
+	font-size: 20px;
+	letter-spacing: normal;
+	word-spacing: 0px;
+	font-weight: 500;
+	line-height: 29px;
+	font-size: 20px;
+}
+
+.col-span-2-about-game img{
+	width: 50px;
+	margin: 0; 
+}
+
+.col-span-2-about-game {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.col-span-6-video-text h1{
+	font-size: 45px;
+	line-height: 54.6px;
+	font-weight: 600;
+}
+
+.col-span-6-video-text p{
+	font-size: 20px;
+	line-height: 31px;
+	font-weight: 400;
+}
+
+.col-span-12-main-text-about h1 {
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.col-span-12-main-text-about h2 {
+	font-size: 42px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.col-span-6-team h2 {
+	font-size: 22px;
+	font-weight: 600;
+	text-align: left;
+	line-height: 31.9px;
+}
+
+.col-span-6-team ul {
+	font-size: 22px;
+	font-weight: 500;
+	text-align: left;
+	line-height: 31.9px;
+	padding: 0;
+	margin: 0;
+}
+
+.poses-img {
+	width: 200px;
+}
+
+.col-span-6-spisok ul li {
+	background-image: url(./images/bubble.svg);
+	font-size: 20px;
+	line-height: 200px;
+	background-repeat: no-repeat;
+}
+
+.col-span-12-main-text-mission h1 {
+	font-size: 150px;
+	line-height: 232.5px;
+	color: #FF8818;
+
+}
+
+.col-span-12-main-text-mission h2 {
+	line-height: 49.6px;
+	font-weight: 500;
+	text-align: center;
+	font-size: 32px;
+}
+
+.who-image {
+	width: 200px;
+}
+
+.col-span-2-for-who {
+	padding: 40px;
+}
+
+.col-span-2-for-who p{
+	font-size: 20px;
+	letter-spacing: normal;
+	word-spacing: 0px;
+	font-weight: 500;
+	line-height: 29px;
+	font-size: 20px;
+}
+
+.col-span-2-for-who img{
+	width: 150px;
+	margin: 0; 
+}
+
+.col-span-2-number {
+	padding: 40px;
+}
+
+.col-span-2-number h2 {
+	font-size: 20px;
+	letter-spacing: normal;
+	word-spacing: 0px;
+	font-weight: 600;
+	line-height: 29px;
+	color: #FF8818;
+}
+
+.col-span-2-number p {
+	font-size: 20px;
+	letter-spacing: normal;
+	word-spacing: 0px;
+	font-weight: 500;
+	line-height: 29px;
+	font-size: 20px;
+}
+
+.col-span-2-number img {
+	width: 150px;
+	margin: 0; 
+}
+
+.col-span-12-bottom-main-text h1{
+	color: #000;
+	font-size: 70px;
+	font-weight: 600;
+	line-height: 91px;
 }
